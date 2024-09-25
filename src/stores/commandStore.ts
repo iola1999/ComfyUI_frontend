@@ -83,7 +83,18 @@ export const useCommandStore = defineStore('command', () => {
         life: 3000
       })
     },
-    'Comfy.BrowseTemplates': showTemplateWorkflowsDialog
+    'Comfy.BrowseTemplates': showTemplateWorkflowsDialog,
+    'Comfy.ZoomIn': () => {
+      app.canvas.ds.changeScale(app.canvas.ds.scale + 0.1)
+      app.canvas.setDirty(true, true)
+    },
+    'Comfy.ZoomOut': () => {
+      app.canvas.ds.changeScale(app.canvas.ds.scale - 0.1)
+      app.canvas.setDirty(true, true)
+    },
+    'Comfy.ToggleLock': () => {
+      app.canvas['read_only'] = !app.canvas['read_only']
+    }
   })
 
   const getCommand = (command: string) => {
