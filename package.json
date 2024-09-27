@@ -87,5 +87,6 @@
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "repository": "https://github.com/Comfy-Org/ComfyUI_frontend.git"
 }

@@ -1,0 +1,18 @@
+{
+  "system": {
+    "os": "posix",
+    "python_version": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+    "embedded_python": false
+  },
+  "devices": [
+    {
+      "name": "cpu",
+      "type": "cpu",
+      "index": null,
+      "vram_total": 7828062208,
+      "vram_free": 4482211840,
+      "torch_vram_total": 7828062208,
+      "torch_vram_free": 4482211840
+    }
+  ]
+}
